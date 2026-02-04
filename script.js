@@ -53,6 +53,31 @@ function startMusic() {
 // Start music on scroll or click
 window.addEventListener("scroll", startMusic);
 window.addEventListener("click", startMusic);
+const formURL =
+  "https://docs.google.com/forms/d/e/1FAIpQLSe5sRUv0urCzOA1IKDgfy4rUKoMhM2Xyx3lWTmNzU7t0vN3CA/formResponse";
+
+const entryID = "entry.1585302338";
+
+function sendResponse(choice) {
+  const formData = new FormData();
+  formData.append(entryID, choice);
+
+  fetch(formURL, {
+    method: "POST",
+    mode: "no-cors",
+    body: formData
+  });
+}
+
+// Button actions
+function yesClick() {
+  sendResponse("YES");
+}
+
+function maybeClick() {
+  sendResponse("MAYBE");
+}
+
 
 
 

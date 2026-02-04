@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  scroll-behavior: smooth;
+  background: linear-gradient(to bottom, #ffe4ec, #fff);
+}
+
+.section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.hero {
+  background: linear-gradient(135deg, #ffafbd, #ffc3a0);
+  color: white;
+}
+
+.hero h1 {
+  font-size: 3rem;
+}
+
+.hero p {
+  font-size: 1.3rem;
+  margin-top: 10px;
+}
+
+.card {
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  max-width: 500px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+.card h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.card p {
+  font-size: 1.1rem;
+  color: #444;
+}
+
+.question p {
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+}
+
+.buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+button {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+#noBtn {
+      background: #ccc;
+      color: #333;
+      position: absolute;
+    }
+
+    #please {
+      color: #ff1744;
+      font-size: 20px;
+      margin-top: 15px;
+      display: none;
+      animation: pulse 1s infinite;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.1); }
+      100% { transform: scale(1); }
+    }
+
+button:first-child {
+  background: #ff6b9c;
+  color: white;
+}
+
+button:last-child {
+  background: #eee;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+.ending {
+  background: #fff5f8;
+}
+
+.fade {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: 1s;
+}
+
+.fade.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.delay {
+  transition-delay: 0.4s;
+}
+.ending {
+  background: #fff5f8;
+  display: flex;
+  flex-direction: column;   /* 👈 stacks items vertically */
+  align-items: center;      /* 👈 centers horizontally */
+  text-align: center;
+}
+
+.ending p {
+  margin-bottom: 20px;      /* 👈 space between text & button */
+}
+
+.whatsapp-btn {
+  margin-top: 10px;
+  padding: 14px 30px;
+  font-size: 1.05rem;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  background: #25D366;
+  color: white;
+  transition: 0.3s;
+}
+
+.whatsapp-btn:hover {
+  transform: scale(1.08);
+  background: #1ebe5d;
+}
+
+.delay2 {
+  transition-delay: 0.8s;
+}
+.thank-you {
+  margin-top: 15px;
+  font-size: 1.05rem;
+  color: #ff6b9c;
+  opacity: 0;
+  transition: opacity 0.6s ease;
+}
+
+.thank-you.show {
+  opacity: 1;
+}
+

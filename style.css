@@ -164,4 +164,17 @@ button:hover {
 .thank-you.show {
   opacity: 1;
 }
+.scroll-hint {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 15px;
+  color: #0c0c0c;
+  opacity: 0.75;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+
+
 

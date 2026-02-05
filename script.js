@@ -72,11 +72,21 @@ function sendResponse(choice) {
 // Button actions
 function yesClick() {
   sendResponse("YES");
+  alert("This made my day 💖");
 }
 
 function maybeClick() {
-  sendResponse("MAYBE");
+  sendResponse("No");
+  alert("No matter your answer... I'm really glad you exist 🌷 💖");
 }
+const scrollHint = document.getElementById("scrollHint");
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 20) {
+    scrollHint.style.display = "none";
+  }
+});
+
 
 
 

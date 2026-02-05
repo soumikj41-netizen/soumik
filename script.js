@@ -18,7 +18,7 @@ function yesClick() {
 }
 
 function maybeClick() {
-  alert("That’s perfectly okay 🌷");
+  alert("No matter your answer... I'm really glad you exist 🌷 💖");
 }
 //function yesClick() {
   //window.location.href =
@@ -86,6 +86,7 @@ window.addEventListener("scroll", () => {
     scrollHint.style.display = "none";
   }
 });
+
 
 
 
